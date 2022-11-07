@@ -1,0 +1,7 @@
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  background: rgba(121, 121, 121, 0.52);
+}

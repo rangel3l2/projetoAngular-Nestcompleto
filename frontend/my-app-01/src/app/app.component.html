@@ -1,0 +1,20 @@
+<h1>Meu projeto Angular</h1>
+
+<h2>{{ title }}</h2>
+<h2>{{ title2 }}</h2>
+<h2>{{ a }}</h2>
+<h2>{{ b }}</h2>
+<h2>{{ a + b }}</h2>
+
+<button>Clique em mim</button>
+
+<app-heroes></app-heroes>
+<mat-slider
+  min="1"
+  max="100"
+  step="1"
+  [(ngModel)]="valor"
+  (valueChange)="printValor(valor)"
+></mat-slider>
+
+<h1>{{ valor }}</h1>

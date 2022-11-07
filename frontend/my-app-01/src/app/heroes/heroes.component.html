@@ -1,0 +1,23 @@
+<h2>Heroes Details</h2>
+
+<ul>
+  <li *ngFor="let hero of heroes" (click)="selectHero(hero)">
+    <span>Id: </span>{{ hero.id }} Name: {{ hero.name }}
+  </li>
+</ul>
+
+<div *ngIf="selectedHero !== undefined">
+  <h2>Selected Hero</h2>
+  <h3>{{ selectedHero.name }}</h3>
+
+  <div>
+    <label for="heroName">Hero Name </label>
+    <input
+      type="text"
+      name="heroName"
+      id="heroName"
+      placeholder="Hero Name"
+      [(ngModel)]="selectedHero.name"
+    />
+  </div>
+</div>
